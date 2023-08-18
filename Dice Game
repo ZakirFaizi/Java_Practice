@@ -1,0 +1,32 @@
+// Programmer : Zakir Faizi
+
+import java.util.Random;
+import java.util.Scanner;
+
+
+public class RandomeNumbers {
+	public static void main(String[] args) {
+		int roll1;
+		int roll2;
+		String ans;
+		Scanner sc = new Scanner(System.in);
+		Random rm = new Random();
+		
+		
+		
+		do {
+			System.out.println("Rolling Dice.....");
+			roll1 = rm.nextInt(6)+1;
+			roll2 = rm.nextInt(6)+1;
+			System.out.printf("There values are: %d  %d \n", roll1, roll2);
+			
+			System.out.println("Would you like to play again Enter Y for yes: ");
+			ans = sc.nextLine();
+			
+			
+		}while(ans.equalsIgnoreCase("Y"));
+		
+		System.out.println("You have successfully exited the game ):");
+	}
+
+}
